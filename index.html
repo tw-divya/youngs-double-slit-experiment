@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>YDSE Virtual Lab</title><link rel="stylesheet" href="css/style.css"></head><body data-root=""><header id="nav"></header><main>
+<section class="hero"><div><h1>Young's Double-Slit Experiment<br><span style="color:var(--cy)">Interactive Virtual Lab</span></h1>
+<p>Design and Development of an Interactive Web-Based Simulation of Young's Double-Slit Experiment — Engineering Physics, Physical Optics.</p>
+<a class="btn" href="pages/simulation.html">Start Simulation</a><a class="btn alt" href="pages/theory.html">Explore Theory</a></div>
+<canvas id="hero" style="height:300px"></canvas></section>
+<div class="grid"><div class="card"><h2>Objectives</h2><ul><li>Visualise interference of coherent light</li><li>Study how λ, d and D control fringe width</li><li>Verify β = λD/d numerically</li><li>Record and compare readings</li></ul></div>
+<div class="card"><h2>Key concepts</h2><ul><li>Superposition &amp; coherence</li><li>Path difference Δ = d sinθ</li><li>Bright: Δ = mλ · Dark: Δ = (m+½)λ</li><li>I = Imax cos²(πdy/λD)</li></ul></div>
+<div class="card"><h2>Quick navigation</h2><p><a href="pages/simulation.html">🔬 Simulation lab</a><br><a href="pages/theory.html">📘 Theory</a><br><a href="pages/experiment.html">📝 Experiment worksheet</a><br><a href="pages/quiz.html">❓ Quiz</a><br><a href="pages/about.html">ℹ️ About</a></p></div></div>
+</main><footer id="footer"></footer><script src="js/main.js"></script><script>const c=document.getElementById("hero");let t=0;function f(){const r=c.getBoundingClientRect(),p=devicePixelRatio||1;if(c.width!==Math.round(r.width*p)){c.width=r.width*p;c.height=r.height*p}t+=.03;Waves.draw(c,t,[0,229,255],3,true);requestAnimationFrame(f)}f()</script></body></html>
