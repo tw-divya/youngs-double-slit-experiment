@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Theory</title><link rel="stylesheet" href="../css/style.css"></head><body data-root="../"><header id="nav"></header><main>
+<h1>Theory and Learning</h1><div class="grid">
+<div class="card"><h2>1. Wave nature of light</h2><p>Light is an electromagnetic wave. Visible wavelengths span about 400 nm (violet) to 700 nm (red). Interference and diffraction confirm this wave behaviour.</p></div>
+<div class="card"><h2>2. Superposition</h2><p>When two waves overlap, the resultant displacement is the sum of the individual displacements.</p></div>
+<div class="card"><h2>3. Coherent sources</h2><p>Sources with the same frequency and a constant phase difference. In YDSE, one source illuminates both slits, so S1 and S2 are coherent.</p></div>
+<div class="card"><h2>4. Constructive interference</h2><p>Waves arrive in phase: <span class="eq">Δ = mλ</span> → bright fringe, maximum intensity.</p></div>
+<div class="card"><h2>5. Destructive interference</h2><p>Waves arrive out of phase: <span class="eq">Δ = (m+½)λ</span> → dark fringe, minimum intensity.</p></div>
+<div class="card"><h2>6. Path difference</h2><p><span class="eq">Δ = d sinθ ≈ d·y/D</span> for small θ (far field, D ≫ d).</p></div>
+<div class="card"><h2>7. Fringe width</h2><p><span class="eq">β = λD/d</span>. Larger λ or D widens fringes; larger d narrows them. Bright positions: yₘ = mβ; dark: (m+½)β.</p></div>
+<div class="card"><h2>8. Young's double-slit experiment</h2><p>Monochromatic light passes through two narrow slits; the screen shows alternating bright and dark fringes with I = Imax cos²(πdy/λD).</p><canvas id="th" style="height:200px"></canvas></div>
+<div class="card"><h2>9. Applications</h2><ul><li>Measuring wavelength</li><li>Thin-film coatings and anti-reflective lenses</li><li>Interferometers (Michelson, LIGO)</li><li>Fibre-optic sensors, holography</li></ul></div></div>
+<div class="card"><h2>Model assumptions</h2><p>Ideal coherent slits of equal intensity, far-field and small-angle approximation. The finite-slit-width diffraction envelope is not included.</p></div>
+</main><footer id="footer"></footer><script src="../js/main.js"></script><script>const c=document.getElementById("th");let t=0;function f(){const r=c.getBoundingClientRect(),p=devicePixelRatio||1;if(c.width!==Math.round(r.width*p)){c.width=r.width*p;c.height=r.height*p}t+=.03;Waves.draw(c,t,[255,200,60],3,true);requestAnimationFrame(f)}f()</script></body></html>
