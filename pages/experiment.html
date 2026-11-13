@@ -1,1 +1,11 @@
-
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Experiment Worksheet</title><link rel="stylesheet" href="../css/style.css"></head><body data-root="../"><header id="nav"></header><main>
+<h1>Experiment and Observation</h1>
+<div class="card"><h2>Add a reading</h2><div class="grid">
+<div><label>λ (nm)</label><input type="number" id="l" value="550"></div><div><label>d (mm)</label><input type="number" id="d" step="0.01" value="0.30"></div>
+<div><label>D (m)</label><input type="number" id="D" step="0.1" value="1.5"></div>
+<div><label>Measured β (mm) — from a real lab, optional</label><input type="number" id="meas" step="0.001"></div>
+<div><label>Observation / note</label><input type="text" id="note"></div></div>
+<p class="err" id="err"></p><button class="btn" id="add">Calculate &amp; add</button><button class="btn alt" id="clearAll">Clear table</button>
+<p class="note">The β calculated column comes from β = λD/d (theory/simulation). The measured column is for <b>actual physical lab measurements</b> you type in; the error column compares the two.</p></div>
+<div class="card tw"><table><thead><tr><th>#</th><th>λ (nm)</th><th>d (mm)</th><th>D (m)</th><th>β calculated (mm)</th><th>β measured (mm)</th><th>% error</th><th>Note</th><th></th></tr></thead><tbody id="tbody"></tbody></table></div>
+</main><footer id="footer"></footer><script src="../js/main.js"></script><script src="../js/physics.js"></script><script src="../js/experiment.js"></script></body></html>
